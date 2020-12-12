@@ -1,0 +1,81 @@
+.profile-container {
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  border: 2px solid #2f4858;
+  height: 80%;
+  box-shadow: 10px 10px 44px -5px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  .left-box {
+    border-right: 4px solid #2f4858;
+    position: absolute;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 10%;
+    }
+    h1 {
+      position: absolute;
+      left: 50%;
+      color: whitesmoke;
+      top: 30%;
+      font-family: "Work Sans", sans-serif;
+      transform: translateX(-50%);
+    }
+    h2 {
+      position: absolute;
+      left: 50%;
+      color: whitesmoke;
+      font-family: "Work Sans", sans-serif;
+      transform: translateX(-50%);
+      top: 40%;
+    }
+    h3 {
+      position: absolute;
+      color: whitesmoke;
+      left: 50%;
+      font-family: "Work Sans", sans-serif;
+      top: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .right-box {
+    position: absolute;
+    left: 25%;
+    width: 25%;
+    height: 100%;
+    width: 75%;
+    //User statastics
+    .personal-score {
+      position: absolute;
+      left: 15%;
+      top: 10%;
+      transform: translateX(-50%);
+      h1 {
+        padding-left: 14px;
+        color: rgba(245, 245, 245, 0.555);
+        font-family: "Work Sans", sans-serif;
+        font-size: 20px;
+      }
+      table {
+        color: whitesmoke;
+        font-family: "Work Sans", sans-serif;
+        border-radius: 5px;
+        th,
+        td {
+          padding: 10px;
+        }
+        .grey {
+          background-color: #202631;
+        }
+      }
+    }
+  }
+}
