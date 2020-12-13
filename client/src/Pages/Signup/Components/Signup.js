@@ -21,7 +21,7 @@ const SignupFormContainer = styled.div`
 
 const SignupForm = styled.form`
   width: 300px;
-  height: 300px;
+  height: 400px;
   display: flex;
   flex-direction: column;
 `;
@@ -45,13 +45,15 @@ const InputField = styled.input`
   &:nth-child(2n) {
     border: 1px solid #f2545b;
     caret-color: #f2545b;
-    color: #f2545b;
+    color: #f9c846;
+
   }
 
   &:nth-child(2n + 1) {
-    border: 1px solid #70d6ff;
-    caret-color: #70d6ff;
-    color: #70d6ff;
+    border: 1px solid #f2545b;
+    caret-color: #f2545b;
+    color: #f9c846;
+
   }
 
   &:focus {
@@ -66,12 +68,13 @@ const Submit = styled.input`
   margin-top: 20px;
   border-radius: 25px;
   outline: none;
-  border: 1px solid #81e979;
-  color: #81e979;
+  border: 1px solid #f2545b;
+  color: #f2545b;
   background-color: transparent;
 
   &:hover {
-    background-color: #81e979;
+    border: 1px solid #f9c846;
+    background-color: #f9c846;
     color: #121520;
   }
 
@@ -80,6 +83,19 @@ const Submit = styled.input`
   }
 `;
 
+//If the user has an account or not
+const AllReadyHaveAnAccount = styled.p`
+  text-align:center;
+  margin-top:20px;
+  color: #f9c846;
+  span{
+    color: red;
+    text-decoration: underline;
+    &:hover{
+      cursor:pointer;
+    }
+  }
+`
 const Signup = (props) => {
   return (
     <SignupContainer>
@@ -99,8 +115,10 @@ const Signup = (props) => {
             autoComplete="off"
           />
           <Submit type="submit" value="Submit" />
-        </SignupForm>
+          <AllReadyHaveAnAccount>Allready have an account? <span>Log in here</span></AllReadyHaveAnAccount>
+        </SignupForm> 
       </SignupFormContainer>
+     
     </SignupContainer>
   );
 };
