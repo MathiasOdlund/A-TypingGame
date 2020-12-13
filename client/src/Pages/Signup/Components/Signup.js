@@ -46,14 +46,12 @@ const InputField = styled.input`
     border: 1px solid #f2545b;
     caret-color: #f2545b;
     color: #f9c846;
-
   }
 
   &:nth-child(2n + 1) {
     border: 1px solid #f2545b;
     caret-color: #f2545b;
     color: #f9c846;
-
   }
 
   &:focus {
@@ -84,39 +82,38 @@ const Submit = styled.input`
 `;
 //If the user agrees with the tos / Term of Service
 const TOSContainer = styled.div`
-  display:flex;
-
-`
+  display: flex;
+`;
 
 const AgreeWithTheTos = styled.input`
   margin-left: 20px;
-  margin-top:6px
-`
+  margin-top: 6px;
+`;
 const Label = styled.label`
-margin-left: 10px;
-color: #f9c846;
-  span{
+  margin-left: 10px;
+  color: #f9c846;
+  span {
     color: #f2545b;
     text-decoration: underline;
-    &:hover{
-      cursor:pointer;
+    &:hover {
+      cursor: pointer;
     }
   }
-`
+`;
 
 //If the user has an account or not
 const AllReadyHaveAnAccount = styled.p`
-  text-align:center;
-  margin-top:20px;
+  text-align: center;
+  margin-top: 20px;
   color: #f9c846;
-  span{
+  span {
     color: #f2545b;
     text-decoration: underline;
-    &:hover{
-      cursor:pointer;
+    &:hover {
+      cursor: pointer;
     }
   }
-`
+`;
 
 const Signup = (props) => {
   return (
@@ -130,12 +127,12 @@ const Signup = (props) => {
             name="email"
             autoComplete="off"
           />
-          
+
           <InputField
             type="text"
-            name='username'
-            placeholder='Username'
-            autoComplete='on'
+            name="username"
+            placeholder="Username"
+            autoComplete="on"
           />
           <InputField
             type="password"
@@ -144,14 +141,20 @@ const Signup = (props) => {
             autoComplete="off"
           />
           <TOSContainer>
-            <AgreeWithTheTos type='checkbox' value='Agree'></AgreeWithTheTos>
-            <Label>Agree with the <span>TOS?</span></Label>
+            <AgreeWithTheTos type="checkbox" value="Agree"></AgreeWithTheTos>
+            <Label>
+              Agree with the <span>TOS?</span>
+            </Label>
           </TOSContainer>
           <Submit type="submit" value="Submit" />
-          <AllReadyHaveAnAccount>Allready have an account? <span>Log in here</span></AllReadyHaveAnAccount>
-        </SignupForm> 
+          <AllReadyHaveAnAccount>
+            Allready have an account?{" "}
+            <a href="/login">
+              <span>Log in here</span>
+            </a>
+          </AllReadyHaveAnAccount>
+        </SignupForm>
       </SignupFormContainer>
-     
     </SignupContainer>
   );
 };

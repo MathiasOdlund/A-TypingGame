@@ -46,14 +46,12 @@ const InputField = styled.input`
     border: 1px solid #f2545b;
     caret-color: #f2545b;
     color: #f9c846;
-
   }
 
   &:nth-child(2n + 1) {
     border: 1px solid #f2545b;
     caret-color: #f2545b;
     color: #f9c846;
-
   }
 
   &:focus {
@@ -85,17 +83,17 @@ const Submit = styled.input`
 
 //If the user has an account or not
 const AllReadyHaveAnAccount = styled.p`
-  text-align:center;
-  margin-top:20px;
+  text-align: center;
+  margin-top: 20px;
   color: #f9c846;
-  span{
+  span {
     color: #f2545b;
     text-decoration: underline;
-    &:hover{
-      cursor:pointer;
+    &:hover {
+      cursor: pointer;
     }
   }
-`
+`;
 const Signup = (props) => {
   return (
     <SignupContainer>
@@ -114,12 +112,16 @@ const Signup = (props) => {
             placeholder="Password"
             autoComplete="off"
           />
-          
+
           <Submit type="submit" value="Submit" />
-          <AllReadyHaveAnAccount>Don't have an account? <span>Sign up here</span></AllReadyHaveAnAccount>
-        </SignupForm> 
+          <AllReadyHaveAnAccount>
+            Don't have an account?{" "}
+            <a href="/signup">
+              <span>Sign up here</span>
+            </a>
+          </AllReadyHaveAnAccount>
+        </SignupForm>
       </SignupFormContainer>
-     
     </SignupContainer>
   );
 };
