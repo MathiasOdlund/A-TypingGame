@@ -93,7 +93,7 @@ const Signup = (props) => {
             autoComplete="off"
           />
           <InputField
-            type="text"
+            type="password"
             name="password"
             placeholder="Password"
             autoComplete="off"
