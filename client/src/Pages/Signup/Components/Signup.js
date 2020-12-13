@@ -21,7 +21,7 @@ const SignupFormContainer = styled.div`
 
 const SignupForm = styled.form`
   width: 300px;
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
 `;
@@ -82,6 +82,27 @@ const Submit = styled.input`
     background-color: #59e250;
   }
 `;
+//If the user agrees with the tos / Term of Service
+const TOSContainer = styled.div`
+  display:flex;
+
+`
+
+const AgreeWithTheTos = styled.input`
+  margin-left: 20px;
+  margin-top:6px
+`
+const Label = styled.label`
+margin-left: 10px;
+color: #f9c846;
+  span{
+    color: #f2545b;
+    text-decoration: underline;
+    &:hover{
+      cursor:pointer;
+    }
+  }
+`
 
 //If the user has an account or not
 const AllReadyHaveAnAccount = styled.p`
@@ -89,7 +110,7 @@ const AllReadyHaveAnAccount = styled.p`
   margin-top:20px;
   color: #f9c846;
   span{
-    color: red;
+    color: #f2545b;
     text-decoration: underline;
     &:hover{
       cursor:pointer;
@@ -108,12 +129,23 @@ const Signup = (props) => {
             name="email"
             autoComplete="off"
           />
+          
+          <InputField
+            type="text"
+            name='name'
+            placeholder='Name'
+            autoComplete='on'
+          />
           <InputField
             type="password"
             name="password"
             placeholder="Password"
             autoComplete="off"
           />
+          <TOSContainer>
+            <AgreeWithTheTos type='checkbox' value='Agree'></AgreeWithTheTos>
+            <Label>Agree with the <span>TOS?</span></Label>
+          </TOSContainer>
           <Submit type="submit" value="Submit" />
           <AllReadyHaveAnAccount>Allready have an account? <span>Log in here</span></AllReadyHaveAnAccount>
         </SignupForm> 
