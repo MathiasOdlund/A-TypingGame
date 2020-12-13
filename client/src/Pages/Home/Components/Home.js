@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 //Internal modules
-import Navbar from "../../../Reusable Components/Navbar/Navbar";
+import Navbar from "../../../Components/Navbar/Navbar";
 
 const HomeContainer = styled.div`
   width: 100%;
@@ -15,7 +15,7 @@ const HomeContainer = styled.div`
 const Home = (props) => {
   return(
     <HomeContainer>
-      
+      <Navbar />
     </HomeContainer>
   );
 }
