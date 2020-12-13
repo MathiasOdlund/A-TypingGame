@@ -117,6 +117,7 @@ const AllReadyHaveAnAccount = styled.p`
     }
   }
 `
+
 const Signup = (props) => {
   return (
     <SignupContainer>
@@ -132,8 +133,8 @@ const Signup = (props) => {
           
           <InputField
             type="text"
-            name='name'
-            placeholder='Name'
+            name='username'
+            placeholder='Username'
             autoComplete='on'
           />
           <InputField
