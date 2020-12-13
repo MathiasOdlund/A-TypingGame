@@ -1,16 +1,22 @@
-import React, { Component } from "react";
-//Importing some styling
+// External modules
+import React from "react";
+import styled from "styled-components";
+
+//Internal modules
 import "./Navbar.css";
-export default class Navbar extends Component {
-  render() {
-    return (
-      <div>
-        <div className="navbar">
-          <div className="logo">
-            <h1>A Typing Game</h1>
-          </div>
-        </div>
-      </div>
-    );
-  }
+
+const NavContainer = styled.div`
+  width: 100%;
+  height: 100px;
+  display: flex;
+`;
+
+const Navbar = (props) => {
+  return(
+    <NavContainer>
+    
+    </NavContainer>
+  );
 }
+
+export default Navbar;
