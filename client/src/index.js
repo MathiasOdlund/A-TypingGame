@@ -5,10 +5,11 @@ import "./index.css";
 import Navbar from './Components/Navbar/Navbar'
 import Signup from "./Pages/Signup/Components/Signup"; // Temporary links to Signup for now. TO change back later.
 import Login from "./Pages/Login/Components/Login";
+import Profile from './Pages/Profile/Components/Profile'
 ReactDOM.render(
   <React.StrictMode>
     <Navbar/>
-    <Login />
+    <Profile />
   </React.StrictMode>,
   document.getElementById("root")
 );
