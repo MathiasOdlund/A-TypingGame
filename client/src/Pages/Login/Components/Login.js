@@ -2,7 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const SignupContainer = styled.div`
+const LoginContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
@@ -11,7 +11,7 @@ const SignupContainer = styled.div`
   background-color: #121520;
 `;
 
-const SignupFormContainer = styled.div`
+const LoginFormContainer = styled.div`
   width: 960px;
   height: 680px;
   display: flex;
@@ -19,7 +19,7 @@ const SignupFormContainer = styled.div`
   align-items: center;
 `;
 
-const SignupForm = styled.form`
+const LoginForm = styled.form`
   width: 300px;
   height: 400px;
   display: flex;
@@ -81,17 +81,19 @@ const Submit = styled.input`
   }
 `;
 
-//If the user has an account or not
-const AllReadyHaveAnAccount = styled.p`
+const SignupDesc = styled.p`
   text-align: center;
   margin-top: 20px;
   color: #f9c846;
-  span {
+`;
+
+const SignupLink = styled.a`
+  color: #f2545b;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
     color: #f2545b;
-    text-decoration: underline;
-    &:hover {
-      cursor: pointer;
-    }
   }
 `;
 const Hr1 = styled.hr`
@@ -106,10 +108,11 @@ const LoginButtons = styled.div`
 
 const Signup = (props) => {
   return (
-    <SignupContainer>
-      <SignupFormContainer>
-        <SignupForm action="/login" method="post">
+    <LoginContainer>
+      <LoginFormContainer>
+        <LoginForm action="/login" method="post">
           <Title>Login</Title>
+          {/* Might wanna deviate away from yellow. Realized that we are trying to be a copy of monkeytype... */}
           <InputField
             type="email"
             placeholder="Email"
@@ -125,16 +128,15 @@ const Signup = (props) => {
           <Hr1 />
           <LoginButtons></LoginButtons>
           <Submit type="submit" value="Submit" />
-          <AllReadyHaveAnAccount>
-            Don't have an account?{" "}
-            <a href="/signup">
-              <span>Sign up here</span>
-            </a>
-          </AllReadyHaveAnAccount>
-        </SignupForm>
-      </SignupFormContainer>
-    </SignupContainer>
+          {/* For submit states, red is not a good color as it is often associated with failure or rejection. Change to green or another non-reddish color*/}
+          <SignupDesc>
+            Don't have an account?
+            <SignupLink href="/signup"> Sign up</SignupLink>
+          </SignupDesc>
+        </LoginForm>
+      </LoginFormContainer>
+    </LoginContainer>
   );
 };
 
-export default Signup;
+export default Login;

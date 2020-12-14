@@ -1,7 +1,7 @@
 // External modules
-import React from "react";
-import styled from "styled-components";
-import UserImg from "../../Assets/Img/account.svg";
+import React from 'react';
+import styled from 'styled-components';
+import UserImg from '../Assets/Img/account.svg';
 const NavContainer = styled.div`
   width: 100%;
   height: 5%;
@@ -20,7 +20,7 @@ const NavLinks = styled.div`
 
     color: whitesmoke;
     a {
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
       &:hover {
         cursor: pointer;
       }
@@ -31,7 +31,7 @@ const AccountImg = styled.img`
   width: 12%;
 `;
 
-const Navbar = (props) => {
+const Navbar = props => {
   return (
     <NavContainer>
       <NavLinks>

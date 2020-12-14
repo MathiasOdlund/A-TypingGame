@@ -1,16 +1,20 @@
-//Imporcting external components
+// External modules
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-// import internal components
+
+// Internal modules
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar";
-import Signup from "./Pages/Signup/Components/Signup"; // Temporary links to Signup for now. TO change back later.
+import Navbar from "./Components/Navbar";
+import ScrollToTop from './Components/ScrollToTop';
+import Signup from "./Pages/Signup/Components/Signup";
 import Login from "./Pages/Login/Components/Login";
 import Profile from "./Pages/Profile/Components/Profile";
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <ScrollToTop />
       <Switch>
         {/*Home directory */}
         <Route exact path="/">
