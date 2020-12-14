@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 // Internal modules
-import PersonalScore from "./PersonalScore";
+import ScoreBoard from "./PersonalScore";
 
 const ProfileContainer = styled.div`
   width: 100%;
@@ -51,7 +51,7 @@ const Profile = (props) => {
         <Location>Location</Location>
       </LeftContainer>
       <RightContainer>
-        <PersonalScore />
+        <ScoreBoard />
       </RightContainer>
     </ProfileContainer>
   );

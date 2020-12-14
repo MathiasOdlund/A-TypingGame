@@ -2,14 +2,14 @@
 import React from "react";
 import styled from "styled-components";
 
-const PersonalScoreContainer = styled.div`
+const ScoreBoardContainer = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
 `;
 
-const PersonalScoreTable = styled.table`
+const ScoreBoardTable = styled.table`
     width: 100%;
     margin-top: 200px;
     color: #fff;
@@ -23,10 +23,10 @@ const Item = styled.td`
     text-alignment: center;
 `;
 
-const PersonalScore = (props) => {
+const ScoreBoard = (props) => {
     return(
-        <PersonalScoreContainer>
-            <PersonalScoreTable>
+        <ScoreBoardContainer>
+            <ScoreBoardTable>
                 <Row>
                     <Item>#</Item>
                     <Item>name</Item>
@@ -36,9 +36,9 @@ const PersonalScore = (props) => {
                     <Item>test</Item>
                     <Item>date</Item>
                 </Row>
-            </PersonalScoreTable>
-        </PersonalScoreContainer>
+            </ScoreBoardTable>
+        </ScoreBoardContainer>
     );
 }
 
-export default PersonalScore;
+export default ScoreBoard;
