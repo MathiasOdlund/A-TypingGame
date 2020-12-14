@@ -94,6 +94,16 @@ const AllReadyHaveAnAccount = styled.p`
     }
   }
 `;
+const Hr1 = styled.hr`
+  background-color: red;
+  width: 80%;
+  opacity: 30%;
+  margin: auto;
+`;
+const LoginButtons = styled.div`
+  display: flex;
+`;
+
 const Signup = (props) => {
   return (
     <SignupContainer>
@@ -112,7 +122,8 @@ const Signup = (props) => {
             placeholder="Password"
             autoComplete="off"
           />
-
+          <Hr1 />
+          <LoginButtons></LoginButtons>
           <Submit type="submit" value="Submit" />
           <AllReadyHaveAnAccount>
             Don't have an account?{" "}
