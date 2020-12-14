@@ -1,6 +1,6 @@
 // External modules
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const SignupContainer = styled.div`
   width: 100%;
@@ -89,31 +89,41 @@ const AgreeWithTheTos = styled.input`
   margin-left: 20px;
   margin-top: 6px;
 `;
+
 const Label = styled.label`
   margin-left: 10px;
   color: #f9c846;
+
   span {
     color: #f2545b;
-    text-decoration: underline;
+    text-decoration: none;
+
     &:hover {
       cursor: pointer;
     }
   }
 `;
 
-//If the user has an account or not
-const AllReadyHaveAnAccount = styled.p`
+const LoginDesc = styled.p`
   text-align: center;
   margin-top: 20px;
   color: #f9c846;
-  span {
+`;
+
+const LoginLink = styled.a`
+  color: #f2545b;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
     color: #f2545b;
-    text-decoration: underline;
-    &:hover {
-      cursor: pointer;
-    }
   }
 `;
+
+/**
+ * TODO:
+ *
+ */
 
 const Signup = (props) => {
   return (
@@ -121,13 +131,13 @@ const Signup = (props) => {
       <SignupFormContainer>
         <SignupForm action="/signup" method="post">
           <Title>Signup</Title>
+          {/* See login container on comments for color scheme */}
           <InputField
             type="email"
             placeholder="Email"
             name="email"
             autoComplete="off"
           />
-
           <InputField
             type="text"
             name="username"
@@ -147,12 +157,10 @@ const Signup = (props) => {
             </Label>
           </TOSContainer>
           <Submit type="submit" value="Submit" />
-          <AllReadyHaveAnAccount>
-            Allready have an account?{" "}
-            <a href="/login">
-              <span>Log in here</span>
-            </a>
-          </AllReadyHaveAnAccount>
+          <LoginDesc>
+            Already have an account?
+            <LoginLink href="/login"> Log in</LoginLink>
+          </LoginDesc>
         </SignupForm>
       </SignupFormContainer>
     </SignupContainer>
