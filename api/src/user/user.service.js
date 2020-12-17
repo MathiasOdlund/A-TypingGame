@@ -8,12 +8,14 @@ import {
 import { getRepositoryToken } from '@nestjs/typeorm';
 import bcrypt from 'bcryptjs';
 import { User } from '../entities/User.entity';
+import { Like } from 'typeorm';
 
 @Injectable()
 @Dependencies(getRepositoryToken(User))
 export class UserService {
   constructor(userRepository) {
     this.userRepository = userRepository;
+    this.usernameMaxDigits = 4;
   }
 
   async validateLocalUser(email, password) {
@@ -34,10 +36,12 @@ export class UserService {
 
   async createUser(data) {
     try {
-      const { email, password } = data;
+      const { username, email, password } = data;
       const hashPassword = await this.hashPassword(password);
+      const userCompleteUsername = await this.generateUsername(username);
       const user = this.userRepository.create({
         email,
+        username: userCompleteUsername,
         password: hashPassword,
         authType: 'local',
         isVerified: false,
@@ -61,6 +65,14 @@ export class UserService {
 
   async findUserByEmail(email) {
     return await this.userRepository.findOne({ where: { email } });
+  }
+
+  async generateUsername (username) {
+    const usernameNum = await this.userRepository.count({ username: Like(`${username}#%`) }) + 1;
+    const usernameNumDigits = usernameNum.toString().split('').length;
+    const paddedZeros = Array.from({ length: this.usernameMaxDigits - usernameNumDigits }, x => 0).join('');
+    username = `${username}#${paddedZeros + usernameNum.toString()}`
+    return username;
   }
 
   hashPassword(password) {

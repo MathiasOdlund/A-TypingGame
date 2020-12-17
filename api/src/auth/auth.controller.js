@@ -24,6 +24,12 @@ export class AuthController {
     return req.user;
   }
 
+  @Post('auth/getUsername')
+  @Bind(Body())
+  async getUsername (data) {
+    return await this.userService.generateUsername(data.username);
+  }
+
   @Post('auth/signup/local')
   @Bind(Body())
   async localSignup(data) {
