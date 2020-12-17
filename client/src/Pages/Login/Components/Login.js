@@ -1,6 +1,10 @@
 // External modules
 import React from "react";
 import styled from "styled-components";
+//Internal modules
+import Discord from '../../../Assets/Img/discord.svg'
+import Facebook from '../../../Assets/Img/facebook.svg'
+import Google from '../../../Assets/Img/google.svg'
 
 const LoginContainer = styled.div`
   width: 100%;
@@ -96,17 +100,24 @@ const SignupLink = styled.a`
     color: #f2545b;
   }
 `;
-const Hr1 = styled.hr`
-  background-color: red;
-  width: 80%;
-  opacity: 30%;
-  margin: auto;
-`;
+
+
+
 const LoginButtons = styled.div`
   display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+  img{
+    width: 45px;
+    object-fit: cover;
+    &:hover{
+      cursor: pointer;
+    }
+  }
 `;
 
-const Signup = (props) => {
+const Login = (props) => {
   return (
     <LoginContainer>
       <LoginFormContainer>
@@ -125,8 +136,12 @@ const Signup = (props) => {
             placeholder="Password"
             autoComplete="off"
           />
-          <Hr1 />
-          <LoginButtons></LoginButtons>
+
+          <LoginButtons>
+            <img src={Discord}/>
+            <img src={Google}/>
+            <img src={Facebook}/>
+          </LoginButtons>
           <Submit type="submit" value="Submit" />
           {/* For submit states, red is not a good color as it is often associated with failure or rejection. Change to green or another non-reddish color*/}
           <SignupDesc>
