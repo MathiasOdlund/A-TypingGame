@@ -1,9 +1,9 @@
 // External modules
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 //Internal modules
-import Navbar from "../../../Components/Navbar";
+import Navbar from '../../../Components/Navbar';
 
 const HomeContainer = styled.div`
   width: 100%;
@@ -11,13 +11,12 @@ const HomeContainer = styled.div`
   display: flex;
 `;
 
-
 const Home = (props) => {
-  return(
+  return (
     <HomeContainer>
       <Navbar />
     </HomeContainer>
   );
-}
+};
 
 export default Home;

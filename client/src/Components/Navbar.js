@@ -31,7 +31,7 @@ const AccountImg = styled.img`
   width: 12%;
 `;
 
-const Navbar = props => {
+const Navbar = (props) => {
   return (
     <NavContainer>
       <NavLinks>

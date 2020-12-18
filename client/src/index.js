@@ -1,15 +1,15 @@
 // External modules
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
 
 // Internal modules
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Navbar from "./Components/Navbar";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Navbar from './Components/Navbar';
 import ScrollToTop from './Components/ScrollToTop';
-import Signup from "./Pages/Signup/Components/Signup";
-import Login from "./Pages/Login/Components/Login";
-import Profile from "./Pages/Profile/Components/Profile";
+import Signup from './Pages/Signup/Components/Signup';
+import Login from './Pages/Login/Components/Login';
+import Profile from './Pages/Profile/Components/Profile';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -35,5 +35,5 @@ ReactDOM.render(
       </Switch>
     </Router>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );

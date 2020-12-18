@@ -1,9 +1,9 @@
 // External modules
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 // Internal modules
-import ScoreBoard from "./PersonalScore";
+import ScoreBoard from './PersonalScore';
 
 const ProfileContainer = styled.div`
   width: 100%;
@@ -25,7 +25,7 @@ const PlaceholderImage = styled.img`
   height: 200px;
   margin: 200px 0 16px 0;
 `;
-  
+
 const Name = styled.h1`
   color: #fff;
   font-size: 16px;
@@ -43,10 +43,11 @@ const RightContainer = styled.div`
 `;
 
 const Profile = (props) => {
-  return(
+  return (
     <ProfileContainer>
       <LeftContainer>
-        <PlaceholderImage src='https://via.placeholder.com/200x200'></PlaceholderImage> {/* Profile image */}
+        <PlaceholderImage src="https://via.placeholder.com/200x200"></PlaceholderImage>{' '}
+        {/* Profile image */}
         <Name>Username</Name>
         <Location>Location</Location>
       </LeftContainer>
@@ -55,6 +56,6 @@ const Profile = (props) => {
       </RightContainer>
     </ProfileContainer>
   );
-}
+};
 
 export default Profile;

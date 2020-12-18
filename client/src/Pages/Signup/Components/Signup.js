@@ -1,9 +1,9 @@
 // External modules
 import React from 'react';
 import styled from 'styled-components';
-import Discord from "../../../Assets/Img/discord.svg";
-import Google from "../../../Assets/Img/google.svg";
-import Facebook from "../../../Assets/Img/facebook.svg";
+import Discord from '../../../Assets/Img/discord.svg';
+import Google from '../../../Assets/Img/google.svg';
+import Facebook from '../../../Assets/Img/facebook.svg';
 
 const SignupContainer = styled.div`
   width: 100%;
@@ -123,15 +123,15 @@ const LoginLink = styled.a`
   }
 `;
 const SignupButtons = styled.div`
-    padding-top: 10px;
+  padding-top: 10px;
   display: flex;
   width: 90%;
   margin: auto;
   justify-content: space-around;
-  img{
+  img {
     width: 45px;
     object-fit: cover;
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
@@ -167,15 +167,15 @@ const Signup = (props) => {
             autoComplete="off"
           />
           <TOSContainer>
-          <AgreeWithTheTos type="checkbox" value="Agree"></AgreeWithTheTos>
-          <Label>
-            Agree with the <span>TOS?</span>
-          </Label>
-        </TOSContainer>
+            <AgreeWithTheTos type="checkbox" value="Agree"></AgreeWithTheTos>
+            <Label>
+              Agree with the <span>TOS?</span>
+            </Label>
+          </TOSContainer>
           <SignupButtons>
-            <img src={Discord}/>
-            <img src={Google}/>
-            <img src={Facebook}/>
+            <img src={Discord} />
+            <img src={Google} />
+            <img src={Facebook} />
           </SignupButtons>
 
           <Submit type="submit" value="Submit" />

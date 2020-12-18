@@ -150,9 +150,9 @@ const Login = (props) => {
             <img src={Facebook} alt='Facebook'/>
           </LoginButtons>
           <Submit type="submit" value="Submit" />
-          {/* For submit states, red is not a good color as it is often associated with failure or rejection. Change to green or another non-reddish color*/}
-          <SignupDesc>
-            Don't have an account?
+            {/* For submit states, red is not a good color as it is often associated with failure or rejection. Change to green or another non-reddish color*/}
+            <SignupDesc>
+              Don't have an account?
             <SignupLink href="/signup"> Sign up</SignupLink>
           </SignupDesc>
         </LoginForm>
