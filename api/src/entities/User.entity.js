@@ -13,6 +13,13 @@ export const User = new EntitySchema({
       type: 'int',
       generated: true,
     },
+    username: {
+      name: 'username',
+      unique: true,
+      type: 'varchar',
+      length: 20,
+      nullable: false,
+    },
     email: {
       name: 'email',
       unique: true,
