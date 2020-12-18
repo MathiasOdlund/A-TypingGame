@@ -1,6 +1,6 @@
 // External modules
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const LoginContainer = styled.div`
   width: 100%;
@@ -88,16 +88,25 @@ const SignupDesc = styled.p`
 `;
 
 const SignupLink = styled.a`
-    color: #f2545b;
-    text-decoration: none;
-    cursor: pointer;
+  color: #f2545b;
+  text-decoration: none;
+  cursor: pointer;
 
-    &:hover {
-      color: #f2545b;
-    }
+  &:hover {
+    color: #f2545b;
+  }
+`;
+const Hr1 = styled.hr`
+  background-color: red;
+  width: 80%;
+  opacity: 30%;
+  margin: auto;
+`;
+const LoginButtons = styled.div`
+  display: flex;
 `;
 
-const Login = (props) => {
+const Signup = (props) => {
   return (
     <LoginContainer>
       <LoginFormContainer>
@@ -116,12 +125,13 @@ const Login = (props) => {
             placeholder="Password"
             autoComplete="off"
           />
-          {/* I know I placed one of them as red before but now when I think of it, might wanna change that. Reasons below... see comments below submit */}
+          <Hr1 />
+          <LoginButtons></LoginButtons>
           <Submit type="submit" value="Submit" />
           {/* For submit states, red is not a good color as it is often associated with failure or rejection. Change to green or another non-reddish color*/}
           <SignupDesc>
             Don't have an account?
-            <SignupLink href="/signup"> Sign up</SignupLink> 
+            <SignupLink href="/signup"> Sign up</SignupLink>
           </SignupDesc>
         </LoginForm>
       </LoginFormContainer>
