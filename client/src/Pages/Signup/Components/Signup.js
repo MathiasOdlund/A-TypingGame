@@ -6,7 +6,6 @@ import styled from 'styled-components';
 import Discord from '../../../Assets/Img/discord.svg';
 import Google from '../../../Assets/Img/google.svg';
 import Facebook from '../../../Assets/Img/facebook.svg';
-import Navbar from '../../../Components/Navbar';
 
 const SignupContainer = styled.div`
   width: 100%;
@@ -147,7 +146,6 @@ const SignupButtons = styled.div`
 const Signup = (props) => {
   return (
       <div>
-      <Navbar />
     <SignupContainer>
       <SignupFormContainer>
         <SignupForm action="/signup" method="post">

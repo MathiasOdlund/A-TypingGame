@@ -22,14 +22,17 @@ ReactDOM.render(
         </Route>
         {/* Signup Directory*/}
         <Route exact path="/signup">
+          <Navbar />
           <Signup />
         </Route>
         {/* Signup Directory*/}
         <Route exact path="/login">
+          <Navbar />
           <Login />
         </Route>
         {/* Profile Directory*/}
         <Route exact path="/profile">
+          <Navbar />
           <Profile />
         </Route>
       </Switch>

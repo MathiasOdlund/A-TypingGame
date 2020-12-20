@@ -6,7 +6,6 @@ import styled from "styled-components";
 import Discord from '../../../Assets/Img/discord.svg'
 import Facebook from '../../../Assets/Img/facebook.svg'
 import Google from '../../../Assets/Img/google.svg'
-import Navbar from '../../../Components/Navbar';
 
 const LoginContainer = styled.div`
   width: 100%;
@@ -126,7 +125,6 @@ const LoginButtons = styled.div`
 const Login = (props) => {
   return (
       <div>
-      <Navbar/>
     <LoginContainer>
       <LoginFormContainer>
         <LoginForm action="/login" method="post">
