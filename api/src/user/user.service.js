@@ -67,7 +67,7 @@ export class UserService {
     return await this.userRepository.findOne({ where: { email } });
   }
 
-  async generateUsername (username) {
+  async generateUsername(username) {
     const usernameNum = await this.userRepository.count({ username: Like(`${username}#%`) }) + 1;
     const usernameNumDigits = usernameNum.toString().split('').length;
     const paddedZeros = Array.from({ length: this.usernameMaxDigits - usernameNumDigits }, x => 0).join('');

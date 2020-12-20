@@ -1,0 +1,26 @@
+## API Base URL
+@baseUrl = http://localhost:3050
+
+### User signup
+POST {{baseUrl}}/auth/signup/local HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "chintu@gmail.com",
+  "username": "Shiroyasha",
+  "password": "asd@54321"
+}
+
+#### email should be a valid email
+#### username min-length=5, max-length=15
+#### password min-length=7
+
+### User login
+POST {{baseUrl}}/auth/login/local HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "chintu@gmail.com",
+  "password": "asd@54321"
+}
+
