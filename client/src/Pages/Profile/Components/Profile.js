@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 // Internal modules
 import ScoreBoard from './PersonalScore';
-
+import Navbar from '../../../Components/Navbar';
 const ProfileContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -44,6 +44,8 @@ const RightContainer = styled.div`
 
 const Profile = (props) => {
   return (
+      <div>
+    <Navbar />
     <ProfileContainer>
       <LeftContainer>
         <PlaceholderImage src="https://via.placeholder.com/200x200"></PlaceholderImage>{' '}
@@ -55,6 +57,7 @@ const Profile = (props) => {
         <ScoreBoard />
       </RightContainer>
     </ProfileContainer>
+      </div>
   );
 };
 

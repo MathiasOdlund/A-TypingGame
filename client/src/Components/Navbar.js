@@ -10,9 +10,12 @@ const Logo = styled.div`
   left: 5%;
   top: 4%;
   transform:translateY(-50%);
+  a{
+  text-decoration: none;
   h1 {
   font-family: 'Fredoka One', cursive;
   color: white;
+  }
   }
 `;
 
@@ -41,12 +44,14 @@ const Navbar = (props) => {
   return (
     <NavContainer>
       <Logo>
+      <a href="/">
         <h1>TypeChamp</h1>
+     </a>
       </Logo>
       <NavLinks>
-        <a href="#">News</a>
-        <a href="#">Leaderboards</a>
-        <a href="#">Profile</a>
+        <a href="/news">News</a>
+        <a href="/leaderboards">Leaderboards</a>
+        <a href="/profile">Profile</a>
       </NavLinks>
     </NavContainer>
   );

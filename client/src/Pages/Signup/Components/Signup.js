@@ -1,9 +1,12 @@
 // External modules
 import React from 'react';
 import styled from 'styled-components';
+
+//Importing internal modules
 import Discord from '../../../Assets/Img/discord.svg';
 import Google from '../../../Assets/Img/google.svg';
 import Facebook from '../../../Assets/Img/facebook.svg';
+import Navbar from '../../../Components/Navbar';
 
 const SignupContainer = styled.div`
   width: 100%;
@@ -32,7 +35,7 @@ const SignupForm = styled.form`
 const Title = styled.h1`
   text-align: center;
   margin-bottom: 54px;
-  color: #f9c846;
+  color: white;
 `;
 
 const InputField = styled.input`
@@ -95,7 +98,7 @@ const AgreeWithTheTos = styled.input`
 
 const Label = styled.label`
   margin-left: 10px;
-  color: #f9c846;
+  color: white;
 
   span {
     color: #f2545b;
@@ -110,7 +113,7 @@ const Label = styled.label`
 const LoginDesc = styled.p`
   text-align: center;
   margin-top: 20px;
-  color: #f9c846;
+  color: white;
 `;
 
 const LoginLink = styled.a`
@@ -143,6 +146,8 @@ const SignupButtons = styled.div`
 
 const Signup = (props) => {
   return (
+      <div>
+      <Navbar />
     <SignupContainer>
       <SignupFormContainer>
         <SignupForm action="/signup" method="post">
@@ -186,6 +191,7 @@ const Signup = (props) => {
         </SignupForm>
       </SignupFormContainer>
     </SignupContainer>
+ </div> 
   );
 };
 

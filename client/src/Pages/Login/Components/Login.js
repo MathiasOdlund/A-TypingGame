@@ -6,6 +6,7 @@ import styled from "styled-components";
 import Discord from '../../../Assets/Img/discord.svg'
 import Facebook from '../../../Assets/Img/facebook.svg'
 import Google from '../../../Assets/Img/google.svg'
+import Navbar from '../../../Components/Navbar';
 
 const LoginContainer = styled.div`
   width: 100%;
@@ -34,7 +35,7 @@ const LoginForm = styled.form`
 const Title = styled.h1`
   text-align: center;
   margin-bottom: 54px;
-  color: #f9c846;
+  color: white;
 `;
 
 const InputField = styled.input`
@@ -89,7 +90,7 @@ const Submit = styled.input`
 const SignupDesc = styled.p`
   text-align: center;
   margin-top: 20px;
-  color: #f9c846;
+  color: white;
 `;
 
 const SignupLink = styled.a`
@@ -124,6 +125,8 @@ const LoginButtons = styled.div`
 
 const Login = (props) => {
   return (
+      <div>
+      <Navbar/>
     <LoginContainer>
       <LoginFormContainer>
         <LoginForm action="/login" method="post">
@@ -158,6 +161,7 @@ const Login = (props) => {
         </LoginForm>
       </LoginFormContainer>
     </LoginContainer>
+    </div>
   );
 };
 
