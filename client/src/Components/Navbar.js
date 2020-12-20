@@ -5,41 +5,48 @@ const NavContainer = styled.div`
   width: 100%;
   height: 5%;
 `;
-
 const Logo = styled.div`
-    position: absolute;
-    left: 5%;
-
-    h1{
- color:white; 
+  position: absolute;
+  left: 5%;
+  top: 4%;
+  transform:translateY(-50%);
+  h1 {
+  font-family: 'Fredoka One', cursive;
+  color: white;
   }
-`
+`;
+
 const NavLinks = styled.div`
   position: absolute;
   right: 5%;
+  top: 4%;
+  transform:translateY(-50%);
   display: flex;
   justify-content: space-around;
   list-style: none;
-  width: 20%;
-    a{
-     color: #fff;
-     font-family: 'Poppins', sans-serif;
-      &:hover {
-        cursor: pointer;
-      }
+  width: 18%;
+  a{
+  
+  text-decoration: none;
+   color: #fff;
+   font-weight:600; 
+    font-family: 'Poppins', sans-serif;
+    &:hover {
+      cursor: pointer;
+    }
   }
 `;
 //Going to be fixing this soon
 const Navbar = (props) => {
   return (
     <NavContainer>
-    <Logo>
-    <h1>TypeChamp</h1>
+      <Logo>
+        <h1>TypeChamp</h1>
       </Logo>
       <NavLinks>
-         <a>Link1</a>
-          <a>Link2</a>
-          <a>Link3</a>
+        <a href="#">News</a>
+        <a href="#">Leaderboards</a>
+        <a href="#">Profile</a>
       </NavLinks>
     </NavContainer>
   );
