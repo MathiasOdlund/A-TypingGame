@@ -50,7 +50,7 @@ const Navbar = (props) => {
       </Logo>
       <NavLinks>
         <a href="/news">News</a>
-        <a href="/leaderboards">Leaderboards</a>
+        <a href="/leaderboard">Leaderboards</a>
         <a href="/profile">Profile</a>
       </NavLinks>
     </NavContainer>
