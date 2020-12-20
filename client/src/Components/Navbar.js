@@ -29,7 +29,7 @@ const NavLinks = styled.div`
       }
   }
 `;
-
+//Going to be fixing this soon
 const Navbar = (props) => {
   return (
     <NavContainer>
