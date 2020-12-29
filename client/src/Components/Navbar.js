@@ -31,6 +31,7 @@ const NavLink = styled.a`
 
   &:hover {
     cursor: pointer;
+    color: #fff;
   }
 `;
 
@@ -42,9 +43,9 @@ const Navbar = (props) => {
         <h1>TypeChamp</h1>
       </Logo>
       <NavLinkContainer>
-        <NavLink href='' >Link1</NavLink>
-        <NavLink>Link2</NavLink>
-        <NavLink>Link3</NavLink>
+        <NavLink href='/news'>News</NavLink>
+        <NavLink href='/leaderboard'>Leaderboard</NavLink>
+        <NavLink href='/profile'>Profile</NavLink>
       </NavLinkContainer>
     </NavContainer>
   );
