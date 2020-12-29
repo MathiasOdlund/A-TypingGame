@@ -1,47 +1,60 @@
 // External modules
 import React from 'react';
 import styled from 'styled-components';
+
 const NavContainer = styled.div`
   width: 100%;
-  height: 5%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px 0 24px;
 `;
-const Logo = styled.div`
-  position: absolute;
-  left: 5%;
+const LogoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
-  h1 {
-    color: white;
+const Logo = styled.a`
+  color: #fff;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: #fff;
   }
 `;
+
 const NavLinkContainer = styled.div`
-  position: absolute;
-  right: 5%;
-  top: 4%;
-  transform:translateY(-50%);
+  width: 320px;
   display: flex;
-  justify-content: space-around;
-  list-style: none;
-  width: 20%;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 const NavLink = styled.a`
   color: #fff;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
+  font-size: 18px;
 
   &:hover {
     cursor: pointer;
     color: #fff;
+    text-decoration: underline;
   }
 `;
 
-//Going to be fixing this soon
+// Going to be fixing this soon
 const Navbar = (props) => {
   return (
     <NavContainer>
-      <Logo>
-        <h1>TypeChamp</h1>
-      </Logo>
+      <LogoContainer>
+        <Logo>TypeChamp</Logo>
+      </LogoContainer>
       <NavLinkContainer>
         <NavLink href='/news'>News</NavLink>
         <NavLink href='/leaderboard'>Leaderboard</NavLink>
