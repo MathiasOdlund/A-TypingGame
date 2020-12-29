@@ -44,19 +44,19 @@ const RightContainer = styled.div`
 
 const Profile = (props) => {
   return (
-      <div>
-    <ProfileContainer>
-      <LeftContainer>
-        <PlaceholderImage src="https://via.placeholder.com/200x200"></PlaceholderImage>{' '}
-        {/* Profile image */}
-        <Name>Username</Name>
-        <Location>Location</Location>
-      </LeftContainer>
-      <RightContainer>
-        <ScoreBoard />
-      </RightContainer>
-    </ProfileContainer>
-      </div>
+    <div>
+      <ProfileContainer>
+        <LeftContainer>
+          <PlaceholderImage src="https://via.placeholder.com/200x200"></PlaceholderImage>
+          {/* Profile image */}
+          <Name>Username</Name>
+          <Location>Location</Location>
+        </LeftContainer>
+        <RightContainer>
+          <ScoreBoard />
+        </RightContainer>
+      </ProfileContainer>
+    </div>
   );
 };
 
