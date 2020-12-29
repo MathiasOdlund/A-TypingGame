@@ -65,12 +65,7 @@ const LeaderboardContestantPlayerName = styled.h5`
     margin-top: 3px;
     font-family: 'Poppins', sans-serif;
 `;
-const Vhr = styled.div`
-    border-left: 1px solid #e1e1e1;
-    height: 50px;
-    border-radius: 10px;
-    margin-right: 10px;
-`;
+
 const Hr = styled.hr`
     width: 100%;
     color: #fff;
