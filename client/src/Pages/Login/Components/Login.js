@@ -1,11 +1,11 @@
 // External modules
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 //Internal modules
-import Discord from '../../../Assets/Img/discord.svg'
-import Facebook from '../../../Assets/Img/facebook.svg'
-import Google from '../../../Assets/Img/google.svg'
+import Discord from '../../../Assets/Img/discord.svg';
+import Facebook from '../../../Assets/Img/facebook.svg';
+import Google from '../../../Assets/Img/google.svg';
 
 const LoginContainer = styled.div`
   width: 100%;
@@ -113,10 +113,10 @@ const LoginButtons = styled.div`
   width: 90%;
   margin: auto;
   justify-content: space-around;
-  img{
+  img {
     width: 45px;
     object-fit: cover;
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
@@ -145,14 +145,14 @@ const Login = (props) => {
           <LoginButtons></LoginButtons>
 
           <LoginButtons>
-            <img src={Discord} alt='Discord'/>
-            <img src={Google} alt='Google'/>
-            <img src={Facebook} alt='Facebook'/>
+            <img src={Discord} alt="Discord" />
+            <img src={Google} alt="Google" />
+            <img src={Facebook} alt="Facebook" />
           </LoginButtons>
           <Submit type="submit" value="Submit" />
-            {/* For submit states, red is not a good color as it is often associated with failure or rejection. Change to green or another non-reddish color*/}
-            <SignupDesc>
-              Don't have an account?
+          {/* For submit states, red is not a good color as it is often associated with failure or rejection. Change to green or another non-reddish color*/}
+          <SignupDesc>
+            Don't have an account?
             <SignupLink href="/signup"> Sign up</SignupLink>
           </SignupDesc>
         </LoginForm>
