@@ -11,7 +11,12 @@ const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0 96px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
+
 const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -27,7 +32,11 @@ const Logo = styled.a`
   text-decoration: none;
 
   &:hover {
-    color: #fff;
+    color: #D0CCD0;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 28px;
   }
 `;
 
@@ -36,6 +45,10 @@ const NavLinkContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const NavLink = styled.a`
@@ -43,11 +56,10 @@ const NavLink = styled.a`
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   font-size: 18px;
+  cursor: pointer;
 
   &:hover {
-    cursor: pointer;
-    color: #fff;
-    text-decoration: underline;
+    color: #D0CCD0;
   }
 `;
 
@@ -62,8 +74,8 @@ const Navbar = (props) => {
         <NavLink href='/news'>News</NavLink>
         <NavLink href='/leaderboard'>Leaderboard</NavLink>
         <NavLink href='/profile'>Profile</NavLink>
+        </NavLinkContainer>
         <Hamburger />
-      </NavLinkContainer>
     </NavContainer>
   );
 };
