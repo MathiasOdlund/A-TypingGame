@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dff8c1e4-1124-404d-8548-d263d66b1b8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/A-TypingGame.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Assets/Img/discord.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Assets/Img/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Assets/Img/google.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Pages/Login/Components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Pages/Login/Components/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Pages/Signup/Components/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Pages/Signup/Components/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +25,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Pictures/Icons/discord.png" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -47,6 +40,8 @@
       <option name="presentableId" value="Default" />
       <updated>1608238783552</updated>
       <workItem from="1608238785500" duration="1497000" />
+      <workItem from="1609204720996" duration="34000" />
+      <workItem from="1609204761115" duration="98000" />
     </task>
     <servers />
   </component>
@@ -63,6 +58,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
