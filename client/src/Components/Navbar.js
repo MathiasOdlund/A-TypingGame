@@ -2,6 +2,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Internal modules
+import Hamburger from './Hamburger';
+
 const NavContainer = styled.div`
   width: 100%;
   height: 80px;
@@ -53,12 +56,13 @@ const Navbar = (props) => {
   return (
     <NavContainer>
       <LogoContainer>
-        <Logo>TypeChamp</Logo>
+        <Logo href='/'>TypeChamp</Logo>
       </LogoContainer>
       <NavLinkContainer>
         <NavLink href='/news'>News</NavLink>
         <NavLink href='/leaderboard'>Leaderboard</NavLink>
         <NavLink href='/profile'>Profile</NavLink>
+        <Hamburger />
       </NavLinkContainer>
     </NavContainer>
   );
