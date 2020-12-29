@@ -13,7 +13,7 @@ const Logo = styled.div`
     color: white;
   }
 `;
-const NavLinks = styled.div`
+const NavLinkContainer = styled.div`
   position: absolute;
   right: 5%;
   top: 4%;
@@ -22,14 +22,18 @@ const NavLinks = styled.div`
   justify-content: space-around;
   list-style: none;
   width: 20%;
-  a {
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    &:hover {
-      cursor: pointer;
-    }
+`;
+
+const NavLink = styled.a`
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
   }
 `;
+
 //Going to be fixing this soon
 const Navbar = (props) => {
   return (
@@ -37,11 +41,11 @@ const Navbar = (props) => {
       <Logo>
         <h1>TypeChamp</h1>
       </Logo>
-      <NavLinks>
-        <a>Link1</a>
-        <a>Link2</a>
-        <a>Link3</a>
-      </NavLinks>
+      <NavLinkContainer>
+        <NavLink href='' >Link1</NavLink>
+        <NavLink>Link2</NavLink>
+        <NavLink>Link3</NavLink>
+      </NavLinkContainer>
     </NavContainer>
   );
 };

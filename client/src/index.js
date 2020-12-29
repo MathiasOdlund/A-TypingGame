@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 // Internal modules
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import ScrollToTop from './Components/ScrollToTop';
 import Signup from './Pages/Signup/Components/Signup';
@@ -45,6 +45,9 @@ ReactDOM.render(
         <Route exact path="/news">
           <Navbar />
           <News />
+        </Route>
+        <Route path='*'>
+            <Redirect to='/' />
         </Route>
       </Switch>
     </Router>
