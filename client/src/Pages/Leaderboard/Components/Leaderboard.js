@@ -11,14 +11,16 @@ const LeaderboardContainer = styled.div`
   top: 7.5%;
   height: 90%;
 
-  H1 {
+  h1 {
     text-align: center;
     color: #fff;
+    font-family: 'Poppins', sans-serif;
   }
   p {
     text-align: right;
     color: #fff;
     font-size: 14px;
+    font-family: 'Poppins', sans-serif;
   }
   hr {
     margin: 0;
@@ -33,7 +35,7 @@ const Region = styled.div`
   justify-content: flex-end;
   margin-left: auto;
   margin-right: 0;
-  width: 130px;
+  width: 120px;
   justify-content: space-around;
 `;
 const LeaderboardContestantsContainer = styled.div``;
@@ -61,6 +63,7 @@ const LeaderboardContestantPlayerIcon = styled.img`
 const LeaderboardContestantPlayerName = styled.h5`
   color: #dfdfdf;
   margin-top: 3px;
+  font-family: 'Poppins', sans-serif;
 `;
 const Vhr = styled.div`
   border-left: 1px solid #e1e1e1;
@@ -94,7 +97,7 @@ const Leaderboard = (props) => {
 
               <LeaderboardContestantPlayerIcon src="https://placebear.com/50/50"></LeaderboardContestantPlayerIcon>
               <LeaderboardContestantPlayerName>
-                Mathias
+                Azzpr#0001
               </LeaderboardContestantPlayerName>
             </LeaderboardContestantPlayerTop>
             <Hr />
