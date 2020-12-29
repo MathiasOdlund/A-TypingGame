@@ -124,41 +124,41 @@ const LoginButtons = styled.div`
 
 const Login = (props) => {
   return (
-      <div>
-    <LoginContainer>
-      <LoginFormContainer>
-        <LoginForm action="/login" method="post">
-          <Title>Login</Title>
-          {/* Might wanna deviate away from yellow. Realized that we are trying to be a copy of monkeytype... */}
-          <InputField
-            type="email"
-            placeholder="Email"
-            name="email"
-            autoComplete="off"
-          />
-          <InputField
-            type="password"
-            name="password"
-            placeholder="Password"
-            autoComplete="off"
-          />
-          <Hr1 />
-          <LoginButtons></LoginButtons>
+    <div>
+      <LoginContainer>
+        <LoginFormContainer>
+          <LoginForm action="/login" method="post">
+            <Title>Login</Title>
+            {/* Might wanna deviate away from yellow. Realized that we are trying to be a copy of monkeytype... */}
+            <InputField
+              type="email"
+              placeholder="Email"
+              name="email"
+              autoComplete="off"
+            />
+            <InputField
+              type="password"
+              name="password"
+              placeholder="Password"
+              autoComplete="off"
+            />
+            <Hr1 />
+            <LoginButtons></LoginButtons>
 
-          <LoginButtons>
-            <img src={Discord} alt="Discord" />
-            <img src={Google} alt="Google" />
-            <img src={Facebook} alt="Facebook" />
-          </LoginButtons>
-          <Submit type="submit" value="Submit" />
-          {/* For submit states, red is not a good color as it is often associated with failure or rejection. Change to green or another non-reddish color*/}
-          <SignupDesc>
-            Don't have an account?
-            <SignupLink href="/signup"> Sign up</SignupLink>
-          </SignupDesc>
-        </LoginForm>
-      </LoginFormContainer>
-    </LoginContainer>
+            <LoginButtons>
+              <img src={Discord} alt="Discord" />
+              <img src={Google} alt="Google" />
+              <img src={Facebook} alt="Facebook" />
+            </LoginButtons>
+            <Submit type="submit" value="Submit" />
+            {/* For submit states, red is not a good color as it is often associated with failure or rejection. Change to green or another non-reddish color*/}
+            <SignupDesc>
+              Don't have an account?
+              <SignupLink href="/signup"> Sign up</SignupLink>
+            </SignupDesc>
+          </LoginForm>
+        </LoginFormContainer>
+      </LoginContainer>
     </div>
   );
 };
