@@ -23,7 +23,9 @@ const LeaderboardContainer = styled.div`
   hr {
     margin: 0;
     padding: 0;
-    color: #fff;
+    height: 2px !important;
+    border-radius: 3px;
+    color: white !important;
   }
 `;
 const Region = styled.div`
@@ -36,23 +38,30 @@ const Region = styled.div`
 `;
 const LeaderboardContestantsContainer = styled.div``;
 const LeaderboardContestantPlayer = styled.div`
-  margin: 30px auto;
-  width: 50%;
+  margin: 12px auto;
+  width: 100%;
 `;
 const LeaderboardContestantPlayerTop = styled.div`
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 `;
 
 const LeaderboardContestantPlayerCountry = styled.img`
-  margin-right: 50px;
-  height: 50px;
-  width: 50px;
+  margin-right: 80px;
+  margin-left: 10px;
+  height: 30px;
+  width: 30px;
 `;
 const LeaderboardContestantPlayerIcon = styled.img`
   border-radius: 10px;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
 `;
-
+const LeaderboardContestantPlayerName = styled.h5`
+  color: #dfdfdf;
+  margin-top: 3px;
+`;
 const Vhr = styled.div`
   border-left: 1px solid #e1e1e1;
   height: 50px;
@@ -62,6 +71,9 @@ const Vhr = styled.div`
 const Hr = styled.hr`
   width: 100%;
   color: #fff;
+  height: 3px !important;
+  background-color: #ffff;
+  border-radius: 2px;
 `;
 const Leaderboard = (props) => {
   return (
@@ -81,6 +93,9 @@ const Leaderboard = (props) => {
               ></LeaderboardContestantPlayerCountry>
 
               <LeaderboardContestantPlayerIcon src="https://placebear.com/50/50"></LeaderboardContestantPlayerIcon>
+              <LeaderboardContestantPlayerName>
+                Mathias
+              </LeaderboardContestantPlayerName>
             </LeaderboardContestantPlayerTop>
             <Hr />
           </LeaderboardContestantPlayer>
