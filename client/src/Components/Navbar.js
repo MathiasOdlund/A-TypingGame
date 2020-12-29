@@ -4,10 +4,10 @@ import styled from 'styled-components';
 
 const NavContainer = styled.div`
   width: 100%;
-  height: 40px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
-  padding: 12px 24px 0 24px;
+  padding: 0 96px;
 `;
 const LogoContainer = styled.div`
   display: flex;
