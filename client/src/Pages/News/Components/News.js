@@ -3,10 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const News = (props) => {
-  return (
-    <div>
-      </div> 
- );
+    return <div></div>;
 };
 
 export default News;

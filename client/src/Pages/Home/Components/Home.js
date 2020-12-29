@@ -6,17 +6,17 @@ import styled from 'styled-components';
 import Navbar from '../../../Components/Navbar';
 
 const HomeContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
+    width: 100%;
+    height: 100%;
+    display: flex;
 `;
 
 const Home = (props) => {
-  return (
-    <HomeContainer>
-      <Navbar />
-    </HomeContainer>
-  );
+    return (
+        <HomeContainer>
+            <Navbar />
+        </HomeContainer>
+    );
 };
 
 export default Home;
