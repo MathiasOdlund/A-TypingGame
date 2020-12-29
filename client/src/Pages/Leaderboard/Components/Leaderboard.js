@@ -25,12 +25,23 @@ const LeaderboardContainer = styled.div`
     color: #fff;
   }
 `;
+const Region = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 0;
+  width: 130px;
+  justify-content: space-around;
+`;
 const Leaderboard = (props) => {
   return (
     <div>
       <LeaderboardContainer>
         <h1>Leaderboards</h1>
-        <p>Global / Country</p>
+        <Region>
+          <p>Global</p>
+          <p>Country</p>
+        </Region>
         <hr></hr>
       </LeaderboardContainer>
     </div>
