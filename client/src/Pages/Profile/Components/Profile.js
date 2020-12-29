@@ -47,7 +47,7 @@ const Profile = (props) => {
         <div>
             <ProfileContainer>
                 <LeftContainer>
-                    <PlaceholderImage src="https://via.placeholder.com/200x200"></PlaceholderImage>
+                    <PlaceholderImage src="https://placebear.com/200/200"></PlaceholderImage>
                     {/* Profile image */}
                     <Name>Username</Name>
                     <Location>Location</Location>
