@@ -8,26 +8,25 @@ import NavLinks from './NavLinks';
 import Hamburger from './Hamburger/Hamburger';
 
 const NavContainer = styled.div`
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 96px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 96px;
 
-  @media (max-width: 768px) {
-    justify-content: center;
-  }
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
 `;
 
-// Going to be fixing this soon
 const Navbar = (props) => {
-  return (
-    <NavContainer>
-      <LogoWords />
-      <NavLinks />
-      <Hamburger />
-    </NavContainer>
-  );
+    return (
+        <NavContainer>
+            <LogoWords />
+            <NavLinks />
+            <Hamburger />
+        </NavContainer>
+    );
 };
 
 export default Navbar;

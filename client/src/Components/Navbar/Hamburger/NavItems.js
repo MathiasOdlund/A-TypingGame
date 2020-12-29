@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const NavItemContainer = styled.div`
     width: 100vw;
     min-height: 100px;
-    display: ${props => props.click ? 'flex' : 'none' };
+    display: ${(props) => (props.click ? 'flex' : 'none')};
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -24,19 +24,19 @@ const NavItem = styled.a`
     cursor: pointer;
 
     &:hover {
-        color: #D0CCD0;
+        color: #d0ccd0;
     }
 `;
 
 const NavItems = (props) => {
     const { click } = props;
-    return(
+    return (
         <NavItemContainer click={click}>
-            <NavItem href='/news'>News</NavItem>
-            <NavItem href='/leaderboard'>Leaderboard</NavItem>
-            <NavItem href='/profile'>Profile</NavItem>
+            <NavItem href="/news">News</NavItem>
+            <NavItem href="/leaderboard">Leaderboard</NavItem>
+            <NavItem href="/profile">Profile</NavItem>
         </NavItemContainer>
     );
-}
+};
 
 export default NavItems;

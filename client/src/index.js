@@ -4,7 +4,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 // Internal modules
-import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Redirect,
+} from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import ScrollToTop from './Components/ScrollToTop';
 import Signup from './Pages/Signup/Components/Signup';
@@ -14,22 +19,22 @@ import Leaderboard from './Pages/Leaderboard/Components/Leaderboard';
 import News from './Pages/News/Components/News';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Navbar />
-    <Router>
-      <ScrollToTop />
-      <Switch>
-        <Route exact path="/" />
-        <Route exact path="/signup" component={Signup} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/profile" component={Profile} />
-        <Route exact path="/leaderboard" component={Leaderboard} />
-        <Route exact path="/news" component={News} />
-        <Route path='*'>
-            <Redirect to='/' />
-        </Route>
-      </Switch>
-    </Router>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <Navbar />
+        <Router>
+            <ScrollToTop />
+            <Switch>
+                <Route exact path="/" />
+                <Route exact path="/signup" component={Signup} />
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/profile" component={Profile} />
+                <Route exact path="/leaderboard" component={Leaderboard} />
+                <Route exact path="/news" component={News} />
+                <Route path="*">
+                    <Redirect to="/" />
+                </Route>
+            </Switch>
+        </Router>
+    </React.StrictMode>,
+    document.getElementById('root')
 );

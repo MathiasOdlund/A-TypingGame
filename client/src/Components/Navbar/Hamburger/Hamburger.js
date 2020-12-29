@@ -19,16 +19,16 @@ const Container = styled.div`
         position: absolute;
         right: 0;
     }
-`
+`;
 
 const Hamburger = (props) => {
     const [click, setClick] = useState(false);
-    return(
+    return (
         <Container>
-            <HamburgerLines click={click} setClick={setClick}/>
-            <NavItems click={click}/>
+            <HamburgerLines click={click} setClick={setClick} />
+            <NavItems click={click} />
         </Container>
     );
-}
+};
 
 export default Hamburger;
