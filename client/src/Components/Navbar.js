@@ -5,7 +5,6 @@ const NavContainer = styled.div`
   width: 100%;
   height: 5%;
 `;
-
 const Logo = styled.div`
   position: absolute;
   left: 5%;
@@ -17,6 +16,8 @@ const Logo = styled.div`
 const NavLinks = styled.div`
   position: absolute;
   right: 5%;
+  top: 4%;
+  transform:translateY(-50%);
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -29,7 +30,7 @@ const NavLinks = styled.div`
     }
   }
 `;
-
+//Going to be fixing this soon
 const Navbar = (props) => {
   return (
     <NavContainer>

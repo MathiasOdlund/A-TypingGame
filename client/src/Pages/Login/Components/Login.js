@@ -34,7 +34,7 @@ const LoginForm = styled.form`
 const Title = styled.h1`
   text-align: center;
   margin-bottom: 54px;
-  color: #f9c846;
+  color: white;
 `;
 
 const InputField = styled.input`
@@ -89,7 +89,7 @@ const Submit = styled.input`
 const SignupDesc = styled.p`
   text-align: center;
   margin-top: 20px;
-  color: #f9c846;
+  color: white;
 `;
 
 const SignupLink = styled.a`
@@ -124,6 +124,7 @@ const LoginButtons = styled.div`
 
 const Login = (props) => {
   return (
+      <div>
     <LoginContainer>
       <LoginFormContainer>
         <LoginForm action="/login" method="post">
@@ -158,6 +159,7 @@ const Login = (props) => {
         </LoginForm>
       </LoginFormContainer>
     </LoginContainer>
+    </div>
   );
 };
 

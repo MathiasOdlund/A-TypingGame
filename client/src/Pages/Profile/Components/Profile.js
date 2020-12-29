@@ -44,6 +44,7 @@ const RightContainer = styled.div`
 
 const Profile = (props) => {
   return (
+      <div>
     <ProfileContainer>
       <LeftContainer>
         <PlaceholderImage src="https://via.placeholder.com/200x200"></PlaceholderImage>{' '}
@@ -55,6 +56,7 @@ const Profile = (props) => {
         <ScoreBoard />
       </RightContainer>
     </ProfileContainer>
+      </div>
   );
 };
 
