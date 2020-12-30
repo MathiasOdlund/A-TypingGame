@@ -84,7 +84,7 @@ const Leaderboard = (props) => {
                 </Region>
                 <hr></hr>
                 <LeaderboardContestantsContainer>
-                    <LeaderboardContestantPlayer>
+                <LeaderboardContestantPlayer>
                         <LeaderboardContestantPlayerTop>
                             <LeaderboardContestantPlayerCountry
                                 src={CountryTemplate}

@@ -3,8 +3,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 //Internal modules
-import Navbar from '../../../Components/Navbar';
 
+import Typing from './Typing';
 const HomeContainer = styled.div`
     width: 100%;
     height: 100%;
@@ -14,7 +14,7 @@ const HomeContainer = styled.div`
 const Home = (props) => {
     return (
         <HomeContainer>
-            <Navbar />
+            <Typing />
         </HomeContainer>
     );
 };

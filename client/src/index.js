@@ -17,6 +17,7 @@ import Login from './Pages/Login/Components/Login';
 import Profile from './Pages/Profile/Components/Profile';
 import Leaderboard from './Pages/Leaderboard/Components/Leaderboard';
 import News from './Pages/News/Components/News';
+import Home from './Pages/Home/Components/Home';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -24,14 +25,14 @@ ReactDOM.render(
         <Router>
             <ScrollToTop />
             <Switch>
-                <Route exact path="/" />
+                <Route exact path="/" component={Home} />
                 <Route exact path="/signup" component={Signup} />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/profile" component={Profile} />
                 <Route exact path="/leaderboard" component={Leaderboard} />
                 <Route exact path="/news" component={News} />
                 <Route path="*">
-                    <Redirect to="/" />
+                    <Redirect to="/"/>
                 </Route>
             </Switch>
         </Router>
