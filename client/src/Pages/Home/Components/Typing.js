@@ -11,7 +11,8 @@ axios
     .get(RANDOM_QUOTE_API_URL)
     .then(function (response) {
         // handle success
-        console.log(response);
+        //console.log(response.data.content);
+        document.getElementById('quote').innerHTML = response.data.content;
     })
     .catch(function (error) {
         // handle error
@@ -52,13 +53,14 @@ const QuoteArea = styled.div`
     height: 30%;
     position: relative;
     top: 50%;
+    color: white;
     transform: translateY(-50%);
 `;
 const Typing = (props) => {
     return (
         <TypingContainer>
             <InputContainer>
-                <QuoteArea id="QuoteArea">TypingChamp - Speed typing</QuoteArea>
+                <QuoteArea id="quote"></QuoteArea>
                 <TextArea />
             </InputContainer>
         </TypingContainer>
