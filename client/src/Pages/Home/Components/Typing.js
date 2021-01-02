@@ -22,31 +22,34 @@ const TypingContainer = styled.div`
     height: 100%;
 `;
 const InputContainer = styled.div`
-    width: 80%;
-    height: 60%;
+    width: 50%;
+    height: 40%;
     position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    border: 2px solid red;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: #13161F;
+    border: 5px solid #11131A;
 `;
 const TextArea = styled.input`
-    width: 900px;
+    width: 98%;
     margin: auto;
     display: block;
     background-color: transparent;
     color: white;
-    border: 3px solid white;
-    border-radius: 3px;
+    border-radius: 1px;
+    border: 5px solid #11131A;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    background-color: #1A1F2E;
     &:focus{
         border-shadow: yellow !important;
     }
 `;
 const QuoteArea = styled.div`
-    border: 2px solid red;
-    width: 900px;
+    width: 98%;
     margin: auto;
     height: 30%;
     position: relative;
