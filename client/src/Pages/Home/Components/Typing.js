@@ -5,22 +5,17 @@ const axios = require('axios').default;
 //Internal modules
 
 //Getting a random quote
-const RANDOM_QUOTE_API_URL = 'http://api.quotable.io/random';
 //using axios to get the quote
-axios
-    .get(RANDOM_QUOTE_API_URL)
-    .then(function (response) {
-        // handle success
-        //console.log(response.data.content);
-        document.getElementById('quote').innerHTML = response.data.content;
-    })
-    .catch(function (error) {
-        // handle error
-        console.log(error);
-    })
-    .then(function () {
-        // always executed
-    });
+axios({
+    params:{
+        minLength: 20,
+        maxLength: 50
+    },
+    url: `http://api.quotable.io/random`
+}).then(function (response) {
+    console.log(response)
+    document.getElementById('quote').innerHTML = response.data.content;
+  });
 
 const TypingContainer = styled.div`
     width: 100%;
@@ -34,7 +29,7 @@ const InputContainer = styled.div`
     transform: translateX(-50%);
     border: 2px solid red;
 `;
-const TextArea = styled.textarea`
+const TextArea = styled.input`
     width: 900px;
     margin: auto;
     display: block;
@@ -45,6 +40,9 @@ const TextArea = styled.textarea`
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    &:focus{
+        border-shadow: yellow !important;
+    }
 `;
 const QuoteArea = styled.div`
     border: 2px solid red;
@@ -55,12 +53,16 @@ const QuoteArea = styled.div`
     top: 50%;
     color: white;
     transform: translateY(-50%);
+    text-align: center; 
+    font-size: 20px;
+    font-family: 'Fira Code', monospace;
+
 `;
 const Typing = (props) => {
     return (
         <TypingContainer>
             <InputContainer>
-                <QuoteArea id="quote"></QuoteArea>
+                <QuoteArea autocorrect="off" autocapitalize="off" type="text" id="quote"></QuoteArea>
                 <TextArea />
             </InputContainer>
         </TypingContainer>

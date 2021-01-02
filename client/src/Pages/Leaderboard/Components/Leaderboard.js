@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 // Internal modules
-import CountryTemplate from '../../../Assets/Img/Country/svg/norway.svg';
+import CountryTemplate from '../../../Assets/Img/Country/svg/sweden.svg';
 
 const LeaderboardContainer = styled.div`
     margin: auto;
