@@ -4,7 +4,10 @@ import styled from 'styled-components';
 
 // Internal modules
 import CountryTemplate from '../../../Assets/Img/Country/svg/sweden.svg';
-
+//Reloading when clicking the leaderboard h1
+const Reload = () =>{
+    window.location.reload(true); 
+}
 const LeaderboardContainer = styled.div`
     margin: auto;
     width: 80%;
@@ -37,6 +40,9 @@ const Region = styled.div`
     margin-right: 0;
     width: 120px;
     justify-content: space-around;
+    p{
+        cursor: pointer;
+    }
 `;
 const LeaderboardContestantsContainer = styled.div``;
 const LeaderboardContestantPlayer = styled.div`
@@ -77,7 +83,7 @@ const Leaderboard = (props) => {
     return (
         <div>
             <LeaderboardContainer>
-                <h1>Leaderboards</h1>
+                <h1 onClick={Reload}>Leaderboards</h1>
                 <Region>
                     <p>Global</p>
                     <p>Country</p>

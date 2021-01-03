@@ -12,9 +12,10 @@ axios({
         maxLength: 50
     },
     url: `http://api.quotable.io/random`
-}).then(function (response) {
+}).then(function awnser(response) {
     console.log(response)
-    document.getElementById('quote').innerHTML = response.data.content;
+    const quote = response.data.content;
+    return quote;
   });
 
 const TypingContainer = styled.div`
@@ -37,15 +38,19 @@ const TextArea = styled.input`
     margin: auto;
     display: block;
     background-color: transparent;
-    color: white;
+    color: rgba(207,207,207,1);
     border-radius: 1px;
     border: 5px solid #11131A;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    font-family: 'Fira Code', monospace;
     background-color: #1A1F2E;
+    font-size: 18px;
+    padding: 5px;
     &:focus{
         border-shadow: yellow !important;
+        outline: none;
     }
 `;
 const QuoteArea = styled.div`
@@ -61,11 +66,12 @@ const QuoteArea = styled.div`
     font-family: 'Fira Code', monospace;
 
 `;
+
 const Typing = (props) => {
     return (
         <TypingContainer>
             <InputContainer>
-                <QuoteArea autocorrect="off" autocapitalize="off" type="text" id="quote"></QuoteArea>
+                <QuoteArea autocorrect="off" autocapitalize="off" type="text" id="quote">{}</QuoteArea>
                 <TextArea />
             </InputContainer>
         </TypingContainer>
